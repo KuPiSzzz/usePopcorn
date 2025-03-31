@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# usePopcorn 🍿
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sleek movie explorer app built with **React**, utilizing custom hooks to manage search, watchlist, and user interaction. Discover movies via the OMDb API, rate them, and build your own movie watchlist.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Preview
 
-### `npm start`
+### 🔍 Search interface
+![Search](public/screenshots/search.jpeg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎬 Movie list
+![Movie list](public/screenshots/movielist.jpeg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ⭐ Rate your movie
+![Rating](public/screenshots/rating.jpeg)
 
-### `npm test`
+### 📂 Watchlist
+![Watchlist](public/screenshots/watchlist.jpeg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Search for movies via the **OMDb API**
+- View detailed information for each movie
+- Add movies to a personal **watchlist**
+- Rate and manage your watched movies
+- Uses custom **React Hooks** for state management and effects
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Technologies Used
 
-### `npm run eject`
+- **React** (Create React App)
+- **JavaScript (ES6+)**
+- **CSS**
+- **OMDb API**
+- Custom Hooks (`useMovies`, `useLocalStorage`, `useKey`, etc.)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Project Structure
+```bash
+usePopcorn/
+├── public/
+│   ├── index.html
+│   └── …
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   ├── index.css
+│   ├── StarRating.js
+│   ├── useMovies.js
+│   ├── useKey.js
+│   ├── useLocalStorageState.js
+│   └── …
+├── package.json
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔧 Getting Started
 
-## Learn More
+### 1. Clone the repo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/KuPiSzzz/usePopcorn.git
+cd usePopcorn
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Install dependencies
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Start the React app
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌍 API Info
 
-### Making a Progressive Web App
+This project uses the OMDb API. To use it:
+	1.	Go to http://www.omdbapi.com/apikey.aspx
+	2.	Request a free API key
+	3.	Replace the API key in your project wherever necessary (typically in useMovies.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
